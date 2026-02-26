@@ -1,21 +1,20 @@
 # Configuration du Routage Dynamique RIPv2
 Elif JAFFRES
 ## Description
-Ce dépôt contient les fichiers et la documentation pour le TP 10 sur la configuration du routage dynamique avec le protocole **RIPv2** sur des équipements Cisco via Packet Tracer.
+Ce dépôt contient les fichiers et la documentation sur la configuration du routage dynamique avec le protocole **RIPv2** sur des équipements Cisco via Packet Tracer.
 
 L'objectif de ce TP est de :
-1. Appliquer les paramètres de base d'un routeur et d'un commutateur.
+1. Appliquer les paramètres de base d'un routeur et d'un switch.
 2. Configurer les interfaces et le plan d'adressage IP.
 3. Configurer le routage dynamique avec le protocole RIP version 2.
 4. Analyser les tables de routage et tester la connectivité.
 
 ## Topologie
 La topologie comprend trois routeurs (R1, R2, R3) interconnectés, deux commutateurs (S1, S2) et quatre ordinateurs (PC1, PC2, PC3, PC4). 
-*Note : Les noms des interfaces peuvent varier selon le modèle de routeur utilisé dans Packet Tracer (ex: `Gig0/0` vs `Gig0/0/0`).*
 
 ## Configuration des équipements (Scripts complets)
 
-### 1. Configuration des Commutateurs (Switchs)
+### 1. Configuration des Switchs
 
 #### Switch S1
 ```text
@@ -47,7 +46,7 @@ copy running-config startup-config
 
 ### 2. Configuration des Routeurs (Adresses IP + Routage RIPv2)
 
-#### Routeur R1 (Router0 sur la maquette)
+#### Routeur R1
 ```text
 enable
 configure terminal
@@ -78,7 +77,7 @@ end
 copy running-config startup-config
 ```
 
-#### Routeur R2 (Router1 sur la maquette)
+#### Routeur R2 
 ```text
 enable
 configure terminal
@@ -108,7 +107,7 @@ end
 copy running-config startup-config
 ```
 
-#### Routeur R3 (Router2 sur la maquette)
+#### Routeur R3
 ```text
 enable
 configure terminal
@@ -166,4 +165,5 @@ Tous les périphériques répondent correctement car le protocole de routage dyn
 
 ---
 *Réalisé avec Cisco Packet Tracer.*
+
 
